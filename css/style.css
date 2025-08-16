@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+/* タブ共通 */
+.tabs, .size-tabs, .font-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.tab, .size-tab, .font-tab {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: #f9f9f9;
+}
+.tab.active, .size-tab.active, .font-tab.active {
+  background: #e0e0e0;
+  font-weight: bold;
+}
+
+/* 入力フォーム */
+.form-area input {
+  display: block;
+  margin: 5px 0;
+  padding: 5px;
+  width: 200px;
+}
+
+/* サンプルエリア */
+.sample-area {
+  margin-top: 20px;
+  border: 1px solid #333;
+  padding: 20px;
+  min-height: 200px;
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright;
+  overflow: auto;
+}
+
+/* サンプル文字サイズ */
+.small { font-size: 14px; }
+.medium { font-size: 20px; }
+.large { font-size: 28px; }
+
+/* フォントスタイル */
+.font-mincho { font-family: "MS Mincho", "Hiragino Mincho ProN", serif; }
+.font-gothic { font-family: "Yu Gothic", "MS Gothic", sans-serif; }
+/* 筆文字：Google Fonts の Sawarabi Mincho を使用 */
+.font-brush { font-family: "Sawarabi Mincho", cursive; }

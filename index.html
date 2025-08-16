@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ご祝儀袋・香典サイト</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts：毛筆系 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- タブ切り替え -->
+  <div class="tabs">
+    <div class="tab active" data-target="goshuugi">ご祝儀袋</div>
+    <div class="tab" data-target="kouden">香典</div>
+  </div>
+
+  <!-- フォームエリア -->
+  <div class="form-area" id="goshuugi">
+    <input type="text" id="name" placeholder="名前">
+    <input type="text" id="addr1" placeholder="住所1">
+    <input type="text" id="addr2" placeholder="住所2">
+    <input type="text" id="addr3" placeholder="住所3">
+  </div>
+  <div class="form-area" id="kouden" style="display:none;">
+    作成中。。。
+  </div>
+
+  <!-- サンプルエリア -->
+  <div>
+    <!-- サイズタブ -->
+    <div class="size-tabs">
+      <div class="size-tab active" data-size="large">大</div>
+      <div class="size-tab" data-size="medium">中</div>
+      <div class="size-tab" data-size="small">小</div>
+    </div>
+
+    <!-- フォントタブ -->
+    <div class="font-tabs">
+      <div class="font-tab active" data-font="mincho">明瞭</div>
+      <div class="font-tab" data-font="gothic">ゴシック</div>
+      <div class="font-tab" data-font="brush">筆文字</div>
+    </div>
+
+    <div id="sample" class="sample-area large font-mincho">
+      入力内容がここに表示されます
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
